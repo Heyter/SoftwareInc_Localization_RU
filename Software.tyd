@@ -1,4 +1,4 @@
-SoftwareCategoryDefault [ "Стандартный"; "" ]
+SoftwareCategoryDefault [ "По умолчанию"; "" ]
 
 Software
     {
