@@ -81,22 +81,69 @@ Software
                 ]
             }
         Feature { Appstore "Магазин приложений" }
-        Feature { Cloudbackup "Облачное резервное копирование" }
+        Feature { Cloudbackup "Резервное копирование в облако" }
+		Feature { Hardware "Аппаратное обеспечение" }
+        Feature
+            {
+            Vibration [ "Vibration"; "Устройство делает брррррр" ]
+            }
+		Feature { Fingerprintscanner "Fingerprint scanner" }
+        Feature
+            {
+            Motiondetection
+                [
+                "Motion detection"
+                "Who doesn't want joysticks embedded in their TVs?"
+                ]
+            }
+        Feature
+            {
+            Externaldrive
+                [
+                "External drive"
+                "We put save games on memory cards and save games on hard drives"
+                ]
+            }
+        Feature
+            {
+            Superoptimization
+                [
+                "Super optimization"
+                "Spend time when developing software to save money when ordering hardware (Remove extra cost when ordering product prints)"
+                ]
+            }
         ]
     Categories
         [
         Category
             {
-            Computer [ "Компьютер"; "Для компьютера." ]
+            Computer [ "Компьютер"; "Для стола" ]
             }
         Category
             {
-            Console [ "Приставка"; "Для приставки." ]
+            Console [ "Приставка"; "Для телевизора" ]
             }
         Category
             {
-            Phone [ "Телефон"; "Для телефона." ]
+            Phone [ "Телефон"; "Для кармана" ]
             }
+        ]
+    Components
+        [
+        Component { Gyroscope "Гироскоп" }
+        Component { Rumbleunit "Rumble unit" }
+        Component { Plastic "Plastic" }
+        Component { Board "Плата" }
+        Component { Joystick "Джойстик" }
+        Component { Drivebay "Отсек дисковода" }
+        Component { Controller "Контроллер" }
+        Component { Console "Console" }
+        Component { Touchsensor "Сенсорный датчик" }
+        Component { Vibration "Vibration" }
+        Component { Screen "Screen" }
+        Component { Phoneassembly "Phone assembly" }
+        Component { Fingerprintscanner "Сканер отпечатков пальцев" }
+        Component { Case "Корпус" }
         ]
     }
 
@@ -174,70 +221,70 @@ Software
 
 Software
     {
-    3DEditor [ "3D редактор"; "В основном, точки в пространстве." ]
+    3DEditor [ "3D редактор"; "В основном, точки в пространстве" ]
     Features
         [
         Feature { 3Dgraphics "3D графика" }
         Feature
             {
-            Sculpting [ "Лепка"; "Представьте, будто точки - это глина." ]
+            Sculpting [ "Лепка"; "Представьте, будто точки - это глина" ]
             }
         Feature
             {
-            Pathtracing [ "Трассировка пути"; "Стреляйте лучами в точки, чтобы сделать картинку." ]
+            Pathtracing [ "Трассировка пути"; "Стреляйте лучами в точки, чтобы сделать картинку" ]
             }
         Feature
             {
-            Skinning [ "Очищение"; "Заставьте точки двигаться самостоятельно." ]
+            Skinning [ "Очищение"; "Заставьте точки двигаться самостоятельно" ]
             }
         Feature
             {
-            Proceduralobjects [ "Процедурные объекты"; "Автоматическая генерация точек." ]
+            Proceduralobjects [ "Процедурные объекты"; "Автоматическая генерация точек" ]
             }
         Feature
             {
-            Physicssimulation [ "Моделирование физики"; "Заставьте точки взаимодействовать друг с другом." ]
+            Physicssimulation [ "Моделирование физики"; "Заставьте точки взаимодействовать друг с другом" ]
             }
         Feature
             {
-            Liquidsimulation [ "Симуляция жидкости"; "Разлейте точки повсюду." ]
+            Liquidsimulation [ "Симуляция жидкости"; "Разлейте точки повсюду" ]
             }
         Feature
             {
-            Hairsimulation [ "Реалистичные волосы"; "Проведите линии между точками." ]
+            Hairsimulation [ "Реалистичные волосы"; "Проведите линии между точками" ]
             }
         Feature
             {
-            Particles [ "Частицы"; "Распылите точки повсюду." ]
+            Particles [ "Частицы"; "Распылите точки повсюду" ]
             }
         Feature
             {
-            Booleanoperations [ "Булевы операции"; "Если точка и точка, то точка." ]
+            Booleanoperations [ "Логические операции"; "Если точка и точка, то точка" ]
             }
         Feature
             {
-            Meshsubdivision [ "Сетчатое деление"; "Добавление точек между точками." ]
+            Meshsubdivision [ "Сетчатое деление"; "Добавление точек между точками" ]
             }
         Feature
             {
-            Inversekinematics [ "Обратная кинематика"; "Аккуратно расположите точки между другими точками." ]
+            Inversekinematics [ "Обратная кинематика"; "Аккуратно расположите точки между другими точками" ]
             }
         Feature
             {
             Bitmining
                 [
-                "Майнер"
-                "Зарабатывайте деньги за счет видеокарты пользователей. {Currency:0.1} за каждого активного пользователя, риск быть пойманным."
+                "Майнер биткойна"
+                "Майнит биткойн с использованием GPU ваших пользователей, чтобы сделать дополнительный доход. {Currency:0.1} - от активного пользователя. Вас могут поймать!"
                 ]
             }
         Feature { System "Система" }
         Feature
             {
-            GPUrendering [ "GPU рендеринг"; "Используйте точечное оборудование, чтобы сделать точки быстрее." ]
+            GPUrendering [ "GPU Рендер"; "Используйте точечное оборудование, чтобы сделать точки быстрее" ]
             }
         Feature
             {
-            Motioncapture [ "Захват движения"; "Преобразование реального движения в точечное." ]
+            Motioncapture [ "Захват движения"; "Метод анимации персонажей и объектов" ]
             }
         ]
     }
@@ -247,41 +294,41 @@ Software
     AudioTool
         [
         "Звуковой редактор"
-        "Предназначен для записи и микширования звуковых эффектов и музыки."
+        "Звуковой редактор предназначен для записи и микширования звуковых эффектов и музыки"
         ]
     Features
         [
         Feature
             {
-            Audio [ "Аудио"; "Вещи, которые издают звук." ]
+            Audio [ "Аудио"; "То, что издает звук" ]
             }
         Feature { Synthesizer "Синтезатор" }
-        Feature { Delayandreverb "Задержка и реверберация" }
+        Feature { Delayandreverb "Задержка и эхо" }
         Feature { EQandcompression "Эквалайзер и сжатие" }
-        Feature { Ampsimulation "Имитация усилителя" }
-        Feature { Wavepitchandstretch "Тон и растяжение волн" }
+        Feature { Ampsimulation "Симуляция усилителя" }
+        Feature { Wavepitchandstretch "Высота и растяжение волн" }
         Feature
             {
-            Autotune [ "Автотюн"; "Делает звук чисто интонированным, для тех кто не умеет петь." ]
+            Autotune [ "Автотюн"; "Делает звук чисто интонированным, для тех кто не умеет петь" ]
             }
-        Feature { Synthesizerpresets "Наборы синтезаторов." }
-        Feature { Soundbank "Хранилище звуков." }
+        Feature { Synthesizerpresets "Предустановки синтезатора" }
+        Feature { Soundbank "Хранилище звуков" }
         Feature
             {
-            Interface [ "Интерфейс"; "Предоставляет пользователю визуальные эффекты для своих звуков." ]
+            Interface [ "Интерфейс"; "Предоставляет пользователю визуальные средства для их аудиосистемы" ]
             }
-        Feature { Multi-trackediting "Многодорожечное редактирование" }
-        Feature { Channelmixer "Канальный микшер" }
+        Feature { Multi-trackediting "Мульти-трековое редактирование" }
+        Feature { Channelmixer "Микшер каналов" }
         Feature { Noteeditor "Редактор заметок" }
         Feature { Spectrumanalyzer "Анализатор спектра" }
         Feature { Racksimulation "Моделирование стойки" }
         Feature
             {
-            System [ "Система"; "Взаимодействие с базовой системой" ]
+            System [ "Система"; "Взаимодействие с исходной базой" ]
             }
-        Feature { Audiocodecs "Аудио кодеки" }
-        Feature { MIDIdeviceinput "MIDI-устройство ввода" }
-        Feature { Effectplug-ins "Плагины эффектов" }
+        Feature { Audiocodecs "Аудиокодеки" }
+        Feature { MIDIdeviceinput "MIDI порт" }
+        Feature { Effectplug-ins "Плагины для эффектов" }
         Feature
             {
             Includedsoundcard
@@ -314,31 +361,31 @@ Software
             Branchingstory
                 [
                 "Нелинейный сюжет"
-                "Несколько разных путей, ведущих к одному и тому же пункту назначения."
+                "Несколько разных путей, ведущих к одному и тому же пункту назначения"
                 ]
             }
         Feature
             {
-            Modsupport [ "Поддержка модов"; "Вы можете изменить эту функцию вне игры, если хотите." ]
+            Modsupport [ "Поддержка модов"; "Вы можете изменить эту функцию вне игры, если хотите" ]
             }
-        Feature { Customizablecharacter "Настраиваемый персонаж" }
+        Feature { Customizablecharacter "Кастомизация персонажа" }
         Feature { 2DGraphics "2D графика" }
         Feature
             {
-            AdvancedHUD [ "Продвинутый HUD"; "Добавьте еще немного графического интерфейса в вашу игру." ]
+            AdvancedHUD [ "Продвинутый интерфейс"; "Добавляет еще немного интерфейса в вашу игру" ]
             }
         Feature
             {
             Post-processing [ "Постобработка"; "\#Свечение" ]
             }
-        Feature { 3DGraphics "3D графика" }
+        Feature { 3DGraphics "3D Графика" }
         Feature { Shadows "Тени" }
-        Feature { Cutscenes "Катсцены" }
+        Feature { Cutscenes "Кат-сцены" }
         Feature
             {
             VR [ "VR"; "Виртуальная реальность" ]
             }
-        Feature { Facialanimations "Лицевые анимации" }
+        Feature { Facialanimations "Анимация лица" }
         Feature
             {
             Proceduralgeneration
@@ -351,19 +398,19 @@ Software
             {
             Wackyphysics
                 [
-                "Дурацкая физика"
-                "Повысьте свои стартовые продажи с помощью вирусных видео, добавив некоторые ошибки в свои физические объекты."
+                "Странная физика"
+                "Повысьте свои стартовые продажи с помощью вирусных видео, добавив некоторые ошибки в физике объектов"
                 ]
             }
         Feature { Audio "Аудио" }
         Feature { Recordeddialog "Записанный диалог" }
-        Feature { Adaptivemusic "Адаптивная музыка" }
+        Feature { Adaptivemusic "Настройка звука" }
         Feature
             {
             Digitalexclusivemusic
                 [
-                "Цифровая эксклюзивная музыка"
-                "Преобразуйте некоторые из ваших физических продаж в цифровые, потеряв часть ваших физических продаж в этом процессе."
+                "Эксклюзивная музыка"
+                "Преобразовать некоторые из ваших физических продаж в цифровые, лишаясь некоторых из ваших физических продаж"
                 ]
             }
         Feature
@@ -371,7 +418,7 @@ Software
             Multiplayer
                 [
                 "Мультиплеер"
-                "Способствует крикам с матом подростков со всего мира."
+                "Крики непристойностей со стороны подростков со всего мира"
                 ]
             }
         Feature
@@ -404,12 +451,12 @@ Software
 
 Software
     {
-    OfficeSoftware [ "Офисное ПО"; "Для всех ваших служебных потребностей." ]
+    OfficeSoftware [ "Офисное ПО"; "Для всех ваших офисных потребностей" ]
     Features
         [
         Feature
             {
-            Interface [ "Интерфейс"; "Вы не сможете сделать офисные документы, если вы их не видите." ]
+            Interface [ "Интерфейс"; "Вы не сможете сделать офисные документы, если вы их не видите" ]
             }
         Feature
             {
@@ -424,7 +471,7 @@ Software
             Autopagelayout
                 [
                 "Автомакет страницы"
-                "То есть потратите 30 минут, пытаясь расположить картинку в нужном месте."
+                "Т.е. потратить 30 минут, пытаясь сделать так, чтобы картинка вписалась в нужное место"
                 ]
             }
         Feature { Chartsandgraphs "Диаграммы и графики" }
@@ -437,26 +484,26 @@ Software
             Animations
                 [
                 "Анимации"
-                "Простые слайды и текст выползают со всех сторон."
+                "Простые слайды и текст выползают со всех сторон"
                 ]
             }
         Feature { Slidetemplates "Шаблоны слайдов" }
         Feature { Vectorgraphics "Векторная графика" }
         Feature
             {
-            Virtualassistant [ "Виртуальный помощник"; "Помогает пользователю решить свои проблемы самостоятельно." ]
+            Virtualassistant [ "Виртуальный помощник"; "Помогает пользователю решить свои проблемы самостоятельно" ]
             }
         Feature { System "Система" }
         Feature
             {
-            Spellcheck [ "Проверка орфографии"; "Позвольте кому-нибудь стать еще более компетентным." ]
+            Spellcheck [ "Проверка орфографии"; "Сделать кого-то еще более компетентным" ]
             }
         Feature
             {
             Interactiveslides
                 [
                 "Интерактивные слайды"
-                "На этом этапе Вы могли бы также сделать сайт."
+                "На этом этапе Вы могли бы также сделать сайт"
                 ]
             }
         Feature
@@ -474,20 +521,20 @@ Software
             Datemanipulation
                 [
                 "Манипулирование датой"
-                "Сколько будет сегодня минут 10. Июнь 2014? Посмотрите на это."
+                "Сколько будет сегодня минут 10. Июнь 2014? Посмотрите на это"
                 ]
             }
         Feature { Scripting "Скриптинг" }
         Feature { Network "Сеть" }
-        Feature { Cloudbackup "Облачное резервное копирование" }
-        Feature { Databaseconnections "Соединения с базой данных" }
+        Feature { Cloudbackup "Резервное копирование в облако" }
+        Feature { Databaseconnections "Подключения к базе данных" }
         Feature { Audioplayback "Воспроизведение аудио" }
         Feature
             {
             Soundeffectlibrary
                 [
                 "Библиотека звуковых эффектов"
-                "Добавьте немного ненужного возбуждения на ваши презентации!"
+                "Принесите много бесполезного восторга в ваши презентации!"
                 ]
             }
         ]
@@ -498,7 +545,7 @@ Software
     Antivirus
         [
         "Антивирус"
-        "Защита компьютеров от цифровых нарушителей спокойствия, с тех пор, как это стало выгодно."
+        "Защищает компьютеры от цифровых нарушителей спокойствия с тех пор, как это стало выгодно."
         ]
     Features
         [
@@ -511,7 +558,7 @@ Software
             Filescanner
                 [
                 "Сканирование файлов"
-                "Поиск вирусов в фоновом режиме, вместе со случайными блокировками файлов."
+                "Сканирование на наличие вирусов в фоновом режиме, которые вызывают случайные блокировки файлов"
                 ]
             }
         Feature
@@ -519,12 +566,12 @@ Software
             Applicationscanner
                 [
                 "Сканер приложений"
-                "Сканирование на наличие вредоносных программ в фоновом режиме, вызывает веселые сбои случайным образом."
+                "Сканирование на наличие вредоносного ПО в фоновом режиме, вызывающее неожиданные сбои в работе"
                 ]
             }
         Feature
             {
-            Anti-theft [ "Анти-вор"; "Почему бы не сообщить вашему компьютеру, что он был украден?" ]
+            Anti-theft [ "Анти-вор"; "Почему бы не сообщить своему компьютеру, когда его украдут" ]
             }
         Feature
             {
@@ -559,8 +606,8 @@ Software
             {
             Passwordmanagement
                 [
-                "Управление паролями"
-                "Перестаньте наполнять свой почтовый ящик уведомлениями о сбросе пароля."
+                "Менеджер паролей"
+                "Не заполняйте свой почтовый ящик сбросом пароля"
                 ]
             }
         Feature
@@ -573,7 +620,7 @@ Software
             Applicationaccesscontrol
                 [
                 "Контроль доступа к приложениям"
-                "Пасьянс Паук не требует доступа к системным файлам."
+                "Solitaire Extreme не нуждается в доступе к системным файлам"
                 ]
             }
         Feature { IPfiltering "IP фильтрация" }
@@ -581,20 +628,20 @@ Software
             {
             Anti-spam
                 [
-                "Анти-спам"
-                "Получайте меньше сообщений о возможности озолотиться от Ваших дальних родственников."
+                "Антиспам"
+                "Получайте меньше сообщений о возможности озолотиться от Ваших дальних родственников"
                 ]
             }
         Feature
             {
-            Adblocker [ "Блокировщик рекламы"; "Удалит те вещи, которые делают новостные сайты не читаемыми." ]
+            Adblocker [ "Блокировщик рекламы"; "Удалите рекламу, которые делают новостные сайты нечитаемыми" ]
             }
         Feature
             {
             Virusdatabase
                 [
-                "База данных"
-                "Автоматическое обновление базы данных антивируса."
+                "Антивирусная база"
+                "Автоматически обновляйте антивирусные базы ваших пользователей"
                 ]
             }
         Feature
@@ -602,7 +649,7 @@ Software
             Datamining
                 [
                 "Сбор данных"
-                "Продавайте данные своих пользователей, чтобы заработать дополнительные {Currency:0.25} за каждого активного пользователя, риск быть пойманным."
+                "Продавайте данные ваших пользователей, чтобы сделать дополнительный доход. {Currency:0.25} - с каждого активного пользователя. Вас могут поймать!"
                 ]
             }
         ]
@@ -615,13 +662,13 @@ Software
         [
         Feature { Commandline "Командная строка" }
         Feature { Third-partyintegration "Сторонняя интеграция" }
-        Feature { Paymentprocessing "Процесс оплаты" }
+        Feature { Paymentprocessing "Обработка платежа" }
         Feature { Businessoptimizationalgoritms "Алгоритмы оптимизации бизнеса" }
         Feature { Userinterface "Пользовательский интерфейс" }
-        Feature { Prettyicons "Красивые значки" }
-        Feature { Databasemanagement "Управление базами данных" }
+        Feature { Prettyicons "Красивые иконки" }
+        Feature { Databasemanagement "Управление базой данных" }
         Feature { Productdatabase "База данных продуктов" }
-        Feature { Inventorymanagement "Управление запасами" }
+        Feature { Inventorymanagement "Управление ресурсами" }
         Feature { Employeemanagement "Управление персоналом" }
         ]
     }
@@ -640,7 +687,7 @@ Software
         Feature { Useraccounts "Учетные записи пользователей" }
         Feature { Messageboard "Доска объявлений" }
         Feature { Store "Магазин" }
-        Feature { Backendapplication "Бэкэнд-приложение" }
+        Feature { Backendapplication "Серверное приложение" }
         ]
     }
 
@@ -649,13 +696,13 @@ Software
     GameAssets "Игровая библиотека"
     Features
         [
-        Feature { 2Dart "2D оформление" }
+        Feature { 2Dart "2D Изображение" }
         Feature { Userinterfacegraphics "Графика польз. интерфейса" }
         Feature { Conceptart "Концепт-арт" }
         Feature { Soundeffects "Звуковые эффекты" }
         Feature { Music "Музыка" }
         Feature { WrittenDialogue "Написанные диалоги" }
-        Feature { 3Dmodels "3D модели" }
+        Feature { 3Dmodels "3D Модели" }
         Feature { Textures "Текстуры" }
         Feature { Environments "Окружение" }
         Feature { Riggingandanimation "Скелет и анимация" }
@@ -676,6 +723,18 @@ Software
         Feature { GPS "GPS" }
         Feature { Hardwareinterface "Аппаратный интерфейс" }
         Feature { Userinterface "Пользовательский интерфейс" }
+        ]
+    Components
+        [
+        Component { Thermostat "Термостат" }
+        Component { Camera "Камера" }
+        Component { Speaker "Динамик" }
+        Component { Motor "Двигатель" }
+        Component { Display "Экран" }
+        Component { GPS "GPS" }
+        Component { USB "USB" }
+        Component { Board "Плата" }
+        Component { Case "Корпус" }
         ]
     }
 
