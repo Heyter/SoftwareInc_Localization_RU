@@ -684,8 +684,8 @@ Software
         Feature { Pagestyling "Стиль страницы" }
         Feature { Customfont "Пользовательский шрифт" }
         Feature { Dynamicpages "Динамические страницы" }
-        Feature { Useraccounts "Учетные записи пользователей" }
-        Feature { Messageboard "Доска объявлений" }
+        Feature { Useraccounts "Личный кабинет" }
+        Feature { Messageboard "Форум" }
         Feature { Store "Магазин" }
         Feature { Backendapplication "Серверное приложение" }
         ]
