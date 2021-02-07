@@ -222,7 +222,7 @@ Furniture
     SmallProductPrinter
         [
         "Небольшой принтер"
-        "Маленький принтер дискет для печати продуктов"
+        "Принтер дискет для печати продукции"
         ]
     MediumProductPrinter   [ "Средний принтер"; "" ]
     LargeProductPrinter

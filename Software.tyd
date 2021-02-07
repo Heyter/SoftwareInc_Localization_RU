@@ -660,7 +660,7 @@ Software
         Feature { Userinterface "Пользовательский интерфейс" }
         Feature { Prettyicons "Красивые иконки" }
         Feature { Databasemanagement "Управление базой данных" }
-        Feature { Productdatabase "База данных продуктов" }
+        Feature { Productdatabase "База данных товаров" }
         Feature { Inventorymanagement "Управление ресурсами" }
         Feature { Employeemanagement "Управление персоналом" }
         ]
@@ -711,7 +711,7 @@ Software
         Feature { Thermostat "Термостат" }
         Feature { Camera "Камера" }
         Feature { Speaker "Динамик" }
-        Feature { Motor "Двигатель" }
+        Feature { Motor "Движок" }
         Feature { Display "Экран" }
         Feature { GPS "GPS" }
         Feature { Hardwareinterface "Аппаратный интерфейс" }
@@ -722,7 +722,7 @@ Software
         Component { Thermostat "Термостат" }
         Component { Camera "Камера" }
         Component { Speaker "Динамик" }
-        Component { Motor "Двигатель" }
+        Component { Motor "Движок" }
         Component { Display "Экран" }
         Component { GPS "GPS" }
         Component { USB "USB" }
