@@ -82,10 +82,31 @@ Software
             }
         Feature { Appstore "Магазин приложений" }
         Feature { Cloudbackup "Резервное копирование в облако" }
+		Feature { Wireless "Беспроводная связь" }
 		Feature { Hardware "Аппаратное обеспечение" }
         Feature
             {
             Vibration [ "Вибрация"; "Устройство делает брррррр" ]
+            }
+        Feature
+            {
+            Wirelesscommunication [ "Беспроводная связь"; "Нельзя споткнуться об электромагнетизм" ]
+            }
+        Feature
+            {
+            Removabledrive
+                [
+                "Съемный накопитель"
+                "Мы сохраняем игры на картах памяти и сохраняем игры на жестких дисках"
+                ]
+            }
+        Feature
+            {
+            Standardizedinput
+                [
+                "Стандартный ввод"
+                "Вам понадобится клавиатура для создания игр на вашей игровой консоли"
+                ]
             }
 		Feature { Fingerprintscanner "Сканер отпечатков пальцев" }
         Feature
@@ -96,6 +117,8 @@ Software
                 "Кто не хочет, чтобы джойстики были встроены в их телевизоры?"
                 ]
             }
+        Feature { Built-inspeaker "Встроенный динамик" }
+        Feature { RGBLighting "RGB подсветка" }
         Feature
             {
             Externaldrive
@@ -127,9 +150,18 @@ Software
             {
             Phone [ "Телефон"; "Для кармана" ]
             }
+		Category { Joystick "Джойстик" }
         ]
     Components
         [
+		Component { Antenna "Антенна" }
+		Component { Motherboard "Материнская плата" }
+		Component { Deviceinput "Устройство ввода" }
+        Component { Smallbatterypack "Небольшой аккумулятор" }
+        Component { Mediumbatterypack "Средний аккумулятор" }
+        Component { Bigbatterypack "Большой аккумулятор" }
+        Component { Speaker "Динамик" }
+        Component { LED "LED" }
         Component { Gyroscope "Гироскоп" }
         Component { Rumbleunit "Вибрация" }
         Component { Plastic "Пластик" }
@@ -195,8 +227,8 @@ Software
             {
             Beautify
                 [
-                "Украшения"
-                "Люди льстят, заставляя их выглядеть лучше на фотографиях, так что они менее склонны к возврату вашего продукта"
+                "Красота"
+                "Льстите людям, делая их лучше на фотографиях, чтобы они с меньшей вероятностью вернули деньги за ваш товар"
                 ]
             }
         Feature { System "Система" }
@@ -369,7 +401,11 @@ Software
             }
         Feature
             {
-            Post-processing [ "Постобработка"; "\#Свечение" ]
+            Post-processing [ "Постобработка"; "\#Bloom" ]
+            }
+        Feature
+            {
+            ReverseUno [ "Реверс Уно"; "Отзывает право собственности на выпущенный продукт у ведущего дизайнера" ]
             }
         Feature { 3DGraphics "3D Графика" }
         Feature { Shadows "Тени" }
@@ -418,6 +454,32 @@ Software
             {
             MMO [ "ММО"; "Массовая многопользовательская онлайн-игра" ]
             }
+        Feature { Newdialog "Новые диалоги" }
+        Feature { Newcutscenes "Новые катсцены" }
+        Feature
+            {
+            Charactercustomization [ "Кастомизация персонажа"; "Лысый это прическа" ]
+            }
+        Feature { Newstoryline "Новый сюжет" }
+        Feature
+            {
+            Sportsteams [ "Спортивные команды"; "Добавьте несколько строк в электронную таблицу и закончим на этом" ]
+            }
+        Feature { Music "Музыка" }
+        Feature
+            {
+            Guns [ "Пушки"; "Может быть, вы можете добавить еще немного пиу пиу" ]
+            }
+        Feature { Playablecharacters "Игровые персонажи" }
+        Feature
+            {
+            Map [ "Карта"; "Сделайте свою игру с открытым миром еще более открытой" ]
+            }
+        Feature { Bossfights "Сражения с боссами" }
+        Feature { Environmentobjects "Объекты окружения" }
+        Feature { Sprites "Спрайты" }
+        Feature { Proceduralparameters "Процедурные параметры" }
+        Feature { AIarchetypes "Архетипы ИИ" }
         ]
     Categories
         [
@@ -438,6 +500,10 @@ Software
         Category
             {
             FPS [ "FPS"; "Шутер от первого лица" ]
+            }
+        Category
+            {
+            Expansionpack [ "Пакет расширения"; "Ого" ]
             }
         ]
     }
@@ -517,9 +583,9 @@ Software
                 "Сколько будет сегодня минут 10. Июнь 2014? Посмотрите на это"
                 ]
             }
-        Feature { Scripting "Скриптинг" }
+        Feature { Scripting "Сценарии" }
         Feature { Network "Сеть" }
-        Feature { Cloudbackup "Резервное копирование в облако" }
+        Feature { Cloudbackup "Облачное резервирование" }
         Feature { Databaseconnections "Подключения к базе данных" }
         Feature { Audioplayback "Воспроизведение аудио" }
         Feature
@@ -530,6 +596,32 @@ Software
                 "Принесите много бесполезного восторга в ваши презентации!"
                 ]
             }
+        Feature
+            {
+            Soundeffects
+                [
+                "Звуковые эффекты"
+                "Кому-то понравится эта презентация, и это не мне"
+                ]
+            }
+        Feature { Mathlibrary "Математическая библиотека" }
+        Feature
+            {
+            Fonts [ "Шрифты"; "<b><color=\#FF0000>Papyrus</color></b>" ]
+            }
+        Feature { Documenttemplates "Шаблоны документов" }
+        Feature
+            {
+            Charts
+                [
+                "Диаграммы"
+                "Вложение древовидной карты в эту временную диаграмму честно сохранило бы годовой отчет"
+                ]
+            }
+        ]
+    Categories
+        [
+        Category { ContentPack "Набор контента" }
         ]
     }
 
@@ -729,5 +821,88 @@ Software
         Component { Board "Плата" }
         Component { Case "Корпус" }
         ]
+    }
+
+Hardware
+    {
+    TestJoystick       "Джойстик"
+    Height             "Высота"
+    Depth              "Глубина"
+    Width              "Ширина"
+    LengthMod          "Length Mod"
+    SkewBottom         "Наклонное дно"
+    SkewTop            "Скошенный верх"
+    Corners            "Corners"
+    Curve              "Curve"
+    CurveTop           "Curve Top"
+    Bend               "Изгиб"
+    IndentationTop     "Indentation Top"
+    IndentationBottom  "Indentation Bottom"
+    Bump               "Bump"
+    Handles            "Handles"
+    HandlesThickness   "Handles Thickness"
+    TriggerBase        "Trigger Base"
+    BackMiddle         "Back Middle"
+    BackFingerspace    "Back Fingerspace"
+    Roundness          "Округлость"
+    FaceCurve          "Face Curve"
+    FaceIndentation    "Face Indentation"
+    Buttons            "4 кнопки"
+    Size               "Размер"
+    Scale              "Масштаб"
+    2Buttons           "2 кнопки"
+    DPad               "D-Pad"
+    DPad2              "Segmented D-Pad"
+    AnalogStick        "Analog Stick"
+    BigButton          "Большая кнопка"
+    SelectButton       "Select Button"
+    Taper              "Taper"
+    Shape              "Shape"
+    TouchPad           "Touch Pad"
+    MiddleHandle       "Middle Handle"
+    Length             "Length"
+    Console            "Консоль"
+    BottomCurve        "Bottom Curve"
+    TopCurve           "Top Curve"
+    Skew               "Скос"
+    Inset              "Inset"
+    Step               "Step"
+    MiddleMod          "Middle Mod"
+    MiddleWidth        "Middle Width"
+    ControllerInsert   "Controller Insert"
+    CellPhone          "Мобильник"
+    ScreenWidth        "Ширина экрана"
+    ScreenHeight       "Высота экрана"
+    ScreenPlacement    "Размещение экрана"
+    CurveSide          "Curve Side"
+    CurveBottom        "Curve Bottom"
+    BulgeTop           "Bulge Top"
+    BulgeFront         "Bulge Front"
+    RoundedBack        "Закругленная спинка"
+    Bumps              "Bumps"
+    KeyHeight          "Key Height"
+    Bend2              "Изгиб 2"
+    KeyScale           "Key Scale"
+    Bevels             "Bevels"
+    Elliptical         "Elliptical"
+    Antenna            "Антенна"
+    Thin               "Thin"
+    Flat               "Flat"
+    SmartPhone         "Смартфон"
+    CurveBack          "Изгиб спины"
+    SoftCorners        "Мягкие углы"
+    BezelThickness     "Толщина ободка"
+    RoundedEdge        "Закругленный край"
+    Bezel              "Ободок"
+    ScreenHeightBottom "Высота экрана - Низ"
+    ScreenHeightTop    "Высота экрана - Верх"
+    Notch              "Выемка"
+    NotchWidth         "Ширина выемки"
+    OldConsole         "Старая консоль"
+    BottomTaper        "Нижний конус"
+    TopTaper           "Верхний конус"
+    BackBump           "Back Bump"
+    Belt               "Belt"
+    Slope              "Slope"
     }
 
